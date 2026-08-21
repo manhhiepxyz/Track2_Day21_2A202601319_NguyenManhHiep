@@ -83,8 +83,8 @@ jobs:
           python - <<EOF
           import os, sys
           acc = float(os.environ['ACCURACY'])
-          if acc < 0.60:
-              print(f"Accuracy {acc} is below threshold 0.60")
+          if acc < 0.68:
+              print(f"Accuracy {acc} is below threshold 0.68")
               sys.exit(1)
           print(f"Accuracy {acc} meets threshold")
           EOF
